@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.11.6 on win32)" generated="2026-04-14T12:55:40.786710" rpa="false" schemaversion="5">
+<suite id="s1" name="Google Test" source="C:\Users\GERDEM\Documents\test-projesi\google_test.robot">
+<test id="s1-t1" name="Google Arama Testi" line="5">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-04-14T12:55:41.465236" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com'.</msg>
+<arg>https://www.google.com</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-04-14T12:55:41.464230" elapsed="7.621567"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2026-04-14T12:55:49.160451" level="INFO">Page title is 'Google'.</msg>
+<arg>Google</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2026-04-14T12:55:49.088788" elapsed="0.071663"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-04-14T12:55:49.162453" level="INFO">Typing text 'Robot Framework' into text field 'name=q'.</msg>
+<arg>name=q</arg>
+<arg>Robot Framework</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-14T12:55:49.162453" elapsed="0.271933"/>
+</kw>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-04-14T12:55:49.436409" level="INFO">Sending key(s) ('ENTER',) to name=q element.</msg>
+<msg time="2026-04-14T12:55:49.750677" level="INFO">Pressing special key ENTER to element.</msg>
+<msg time="2026-04-14T12:55:49.750677" level="INFO">Releasing special key ENTER.</msg>
+<arg>name=q</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-04-14T12:55:49.435415" elapsed="1.814827"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-04-14T12:55:53.251615" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-04-14T12:55:51.251395" elapsed="2.000220"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-04-14T12:55:53.251615" elapsed="2.130769"/>
+</kw>
+<status status="PASS" start="2026-04-14T12:55:41.463223" elapsed="13.920328"/>
+</test>
+<status status="PASS" start="2026-04-14T12:55:40.788722" elapsed="14.597973"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Google Test" id="s1" pass="1" fail="0" skip="0">Google Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
