@@ -19,3 +19,9 @@ Google Arama Kutusu Testi
     Open Browser    https://www.google.com    chrome
     Page Should Contain Element    name=q
     Close Browser
+
+Google Baslik Testi
+    Open Browser    https://www.google.com    chrome
+    Title Should Be    Google
+    Page Should Contain Element    name=q
+    Close Browser
